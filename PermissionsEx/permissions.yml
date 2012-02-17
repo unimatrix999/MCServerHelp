@@ -1,0 +1,118 @@
+users:
+    I3looddevilz:
+        group:
+        - owner
+groups:
+    owner:
+        permissions:
+        - '*'
+        prefix: '&4[Commander]'
+        inheritance:
+        - VIP
+        options:
+            rank: '1'
+    VIP:
+        permissions:
+        - multiverse.access.*
+        - commandbook.time.*
+        - commandbook.time
+        - commandbook.weather
+        prefix: '&c[VIP]'
+        inheritance:
+        - Donator
+        options:
+            rank: '300'
+    Donator:
+        permissions:
+        - ChestShop.shop.*
+        - multihome.*
+        - commandbook.teleport
+        - worldedit.navigation.*
+        - commandbook.kit.list
+        - commandbook.kit.kits.architect
+        - worldedit.fixlava
+        - worldedit.drain
+        - worldedit.fixwater
+        - commandbook.kit.kits.vipfood
+        - commandbook.kit.kits.vip1
+        - commandbook.kit.kits.viptools
+        - commandbook.teleport.*
+        - stargate.network.*
+        - stargate.world.*
+        - nocheat.*
+        - stargate.create.personal
+        - stargate.create
+        - superpickaxe.use
+        prefix: '&e[Donator]'
+        inheritance:
+        - Adventurer
+        options:
+            rank: '400'
+    Staff:
+        permissions:
+        - Chestshop.admin
+        - lockette.admin.*
+        - mcbans.admin
+        - mcbans.ban.global
+        - ChestShop.shop.*
+        prefix: '&4[Staff]'
+        inheritance:
+        - Moderator
+        options:
+            rank: '500'
+    Moderator:
+        permissions:
+        - mcbans.lookup
+        - commandbook.teleport
+        - ChestShop.mod
+        - hawkeye.rollback
+        - hawkeye.tpto
+        - commandbook.teleport.*
+        - mcbans.unban
+        - mcbans.ban.view
+        - mcbans.ban.local
+        - mcbans.kick
+        - permissions.user.demote.*
+        - permissions.user.promote.*
+        prefix: '&9[Moderator]'
+        inheritance:
+        - Builder
+        options:
+    Builder:
+        permissions:
+        - iConomy.user
+        - iConomy.plus
+        - iConomy.payment
+        - iConomy.rank
+        - multihome.homeondeath
+        - mmultiverse.access.name
+        - mcmmo.ability.*
+        - mcmmo.item.*
+        - multiverse.access.*
+        - mcmmo.tools.*
+        - stargate.use
+        - ChestShop.shop.create
+        - ChestShop.shop.buy
+        - ChestShop.shop.sell
+        - iConomy.holdings
+        - stargate.free.use
+        - stargate.network.*
+        - multihome.defaulthome.*
+        - lockette.user.create.*
+        - mcmmo.skills.*
+        - multihome.free.defaulthome.*
+        prefix: '&6[Builder]'
+        inheritance:
+        - Guest
+        options:
+            rank: '900'
+    Guest:
+        default: true
+        permissions:
+        - modifyworld.*
+        - commandbook.rules
+        - commandbook.who
+        - commandbook.spawn
+        prefix: '&8[BC]'
+        options:
+            rank: '1000'
